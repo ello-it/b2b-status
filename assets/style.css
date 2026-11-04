@@ -175,3 +175,9 @@ h2 { font-size: 17px; margin: 36px 0 12px; }
   .steps li { font-size: 11px; }
   .history li { flex-direction: column; gap: 2px; }
 }
+
+/* ── Bandeau « page de test » (à retirer à la mise en service) ───────── */
+.test-banner {
+  background: #A32D2D; color: #fff; text-align: center;
+  padding: 10px 16px; font-size: 14px;
+}

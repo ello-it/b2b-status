@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Statut des services — ello</title>
+  <meta name="description" content="État en temps réel des services ello : pannes en cours et maintenances planifiées.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./"><b>ello</b><span>Statut des services</span></a>
+    <nav><a href="https://www.ello.ch">ello.ch &#8599;</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- État global : ok / warn / danger selon l'incident le plus grave en cours -->
+  <div class="overall warn" role="status">
+    <span class="dot" aria-hidden="true"></span>
+    <div>
+      <strong>Perturbation en cours</strong>
+      <p>Un incident touche une partie de nos clients. Les autres services fonctionnent normalement.</p>
+    </div>
+  </div>
+
+  <h2>Incidents en cours</h2>
+  <article class="card accent-danger">
+    <div class="pills">
+      <span class="pill danger">Panne</span>
+      <span class="pill warn">Cause identifiée</span>
+    </div>
+    <h3><a href="incidents/2026-11-04-panne-fibre-peseux.html">Interruption d'Internet et du téléphone fibre à Peseux</a></h3>
+    <div class="meta">
+      <span>Services : <b>Internet fibre, Téléphonie</b></span>
+      <span>Zone : <b>Peseux (secteur Grand-Rue)</b></span>
+      <span>Depuis : <b>04.11.2026, 13:25</b></span>
+    </div>
+    <p>Une fibre a été endommagée lors de travaux de génie civil. Notre équipe est sur place ; rétablissement estimé vers 18:00.</p>
+    <a class="more" href="incidents/2026-11-04-panne-fibre-peseux.html">Suivre l'incident &rarr;</a>
+  </article>
+
+  <h2>Maintenances planifiées</h2>
+  <article class="card accent-info">
+    <div class="pills">
+      <span class="pill info">Maintenance</span>
+      <span class="pill neutral">Planifiée</span>
+    </div>
+    <h3>Mise à jour des équipements du réseau fibre</h3>
+    <div class="meta">
+      <span>Quand : <b>jeu. 12.11.2026, 00:00 – 04:00</b></span>
+      <span>Services : <b>Internet fibre, Téléphonie</b></span>
+      <span>Zone : <b>Ville de Neuchâtel</b></span>
+    </div>
+    <p>Une ou deux coupures de 15 minutes au maximum sont possibles pendant cette période. Aucune action n'est requise de votre part.</p>
+  </article>
+  <article class="card accent-info">
+    <div class="pills">
+      <span class="pill info">Maintenance</span>
+      <span class="pill neutral">Planifiée</span>
+    </div>
+    <h3>Mise à jour de la plateforme TV</h3>
+    <div class="meta">
+      <span>Quand : <b>mer. 18.11.2026, 02:00 – 05:00</b></span>
+      <span>Services : <b>Télévision, Replay</b></span>
+      <span>Zone : <b>Tous les clients</b></span>
+    </div>
+    <p>Le Replay et le guide des programmes peuvent être indisponibles par moments. Les chaînes en direct ne sont pas concernées.</p>
+  </article>
+
+  <h2>État des services</h2>
+  <div class="services">
+    <ul>
+      <li><span>Internet fibre</span><span class="pill warn">Perturbation partielle</span></li>
+      <li><span>Internet câble</span><span class="pill ok">Opérationnel</span></li>
+      <li><span>Téléphonie</span><span class="pill warn">Perturbation partielle</span></li>
+      <li><span>Télévision</span><span class="pill ok">Opérationnel</span></li>
+      <li><span>Messagerie e-mail</span><span class="pill ok">Opérationnel</span></li>
+      <li><span>Hotline</span><span class="pill ok">Opérationnel</span></li>
+    </ul>
+  </div>
+
+  <h2>Incidents résolus (14 derniers jours)</h2>
+  <ul class="history">
+    <li><a href="#">Lenteurs d'envoi des e-mails</a><time datetime="2026-10-29">29.10.2026 · résolu en 1 h 40</time></li>
+    <li><a href="#">Coupure Internet câble à Marin-Epagnier</a><time datetime="2026-10-24">24.10.2026 · résolu en 3 h 05</time></li>
+  </ul>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Besoin d'aide ? Hotline : <b>[numéro hotline]</b> · <a href="mailto:[adresse support]">[adresse support]</a></span>
+    <span>Page mise à jour le 04.11.2026 à 14:12</span>
+  </div>
+</footer>
+
+</body>
+</html>

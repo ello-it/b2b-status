@@ -2,33 +2,35 @@
    Aucune ressource externe : la page doit rester légère et lisible en 4G. */
 
 :root {
-  --bg: #f6f5f2;
+  /* Palette calée sur le bleu du logo ello business (#0032FF). Les couleurs de
+     texte restent assez foncées pour être lisibles sur fond blanc (WCAG AA). */
+  --bg: #f5f6fa;
   --surface: #ffffff;
-  --border: #e4e2dd;
-  --text: #1a1a1a;
-  --muted: #6b6b6b;
-  --brand: #185FA5;
+  --border: #e2e5ee;
+  --text: #11131a;
+  --muted: #5f6475;
+  --brand: #0032FF;
 
-  --ok: #1D9E75;      --ok-bg: #E1F5EE;
-  --warn: #854F0B;    --warn-bg: #FBEFD9;
-  --danger: #A32D2D;  --danger-bg: #FCEBEB;
-  --info: #185FA5;    --info-bg: #E6F1FB;
-  --neutral: #6b6b6b; --neutral-bg: #efeeeb;
+  --ok: #00874D;      --ok-bg: #DDF6EA;
+  --warn: #B85300;    --warn-bg: #FFEBD6;
+  --danger: #D6002A;  --danger-bg: #FFE3E8;
+  --info: #0032FF;    --info-bg: #E5EBFF;
+  --neutral: #5f6475; --neutral-bg: #eceef4;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #141414;
-    --surface: #1e1e1e;
-    --border: #333;
-    --text: #ececec;
-    --muted: #a0a0a0;
-    --brand: #6aa8e8;
+    --bg: #0e1018;
+    --surface: #181b26;
+    --border: #2c3142;
+    --text: #eceef4;
+    --muted: #a3a8b8;
+    --brand: #7C95FF;
 
-    --ok: #4cc79f;      --ok-bg: #16352b;
-    --warn: #e0a85a;    --warn-bg: #3a2c14;
-    --danger: #e57373;  --danger-bg: #3d1d1d;
-    --info: #6aa8e8;    --info-bg: #182c40;
-    --neutral: #a0a0a0; --neutral-bg: #2a2a2a;
+    --ok: #2FD08A;      --ok-bg: #0f3324;
+    --warn: #FF9F43;    --warn-bg: #3d2610;
+    --danger: #FF5C77;  --danger-bg: #42121c;
+    --info: #7C95FF;    --info-bg: #161f4d;
+    --neutral: #a3a8b8; --neutral-bg: #262a38;
   }
 }
 
@@ -181,6 +183,6 @@ h2 { font-size: 17px; margin: 36px 0 12px; }
 
 /* ── Bandeau « page de test » (à retirer à la mise en service) ───────── */
 .test-banner {
-  background: #A32D2D; color: #fff; text-align: center;
+  background: #D6002A; color: #fff; text-align: center;
   padding: 10px 16px; font-size: 14px;
 }

@@ -1,7 +1,10 @@
 {
  "test_mode": true,
  "message": "",
- "updated": "2026-11-19T11:45",
+ "updated": "2026-11-19T12:03",
+ "seq": {
+  "INC-2026": 116
+ },
  "services": [
   {
    "id": "fibre",
@@ -68,20 +71,23 @@
   },
   {
    "id": "INC-2026-116",
-   "title": "Problème d'alimentation électrique",
+   "title": "Panne fibre",
    "severity": "outage",
    "stage": "investigating",
-   "services": [],
-   "zone": "HighDC",
-   "started": "2026-11-19T11:44",
+   "services": [
+    "fibre",
+    "svc-mwncmwp3"
+   ],
+   "zone": "Marin",
+   "started": "2026-11-19T12:02",
    "eta": "",
    "resolved": "",
-   "summary": "Panne de courant actuellement dans notre Datacenter de HighDC",
+   "summary": "Suite à une coupure fibre, les services Internet et Connect DC sont impactés",
    "updates": [
     {
-     "at": "2026-11-19T11:45",
+     "at": "2026-11-19T12:03",
      "stage": "investigating",
-     "text": "Panne de courant actuellement dans notre Datacenter de HighDC"
+     "text": "Suite à une coupure fibre, les services Internet et Connect DC sont impactés"
     }
    ]
   }

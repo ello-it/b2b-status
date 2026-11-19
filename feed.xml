@@ -5,9 +5,15 @@
 <atom:link href="https://status.ello-business.ch/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Incidents sur les services ello business : début, avancement et résolution.</description>
 <language>fr-ch</language>
-<lastBuildDate>Thu, 19 Nov 2026 11:45:00 +0100</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 12:03:00 +0100</lastBuildDate>
 <ttl>5</ttl>
-<item><title>[Test] [Panne] Problème d'alimentation électrique — Analyse en cours</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-116</link><guid isPermaLink="false">INC-2026-116/2026-11-19T11:45/investigating</guid><pubDate>Thu, 19 Nov 2026 11:45:00 +0100</pubDate><description>&lt;p&gt;Panne de courant actuellement dans notre Datacenter de HighDC&lt;/p&gt;&lt;p&gt;Réf. INC-2026-116 · Zone : HighDC&lt;/p&gt;</description></item>
-<item><title>[Test] [Perturbation] Appels sortants et entrants impossibles — Résolu</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-115</link><guid isPermaLink="false">INC-2026-115/2026-11-18T10:00/resolved</guid><pubDate>Wed, 18 Nov 2026 10:00:00 +0100</pubDate><description>&lt;p&gt;Les appels sortants fonctionnent à nouveau normalement. L'incident est clos.&lt;/p&gt;&lt;p&gt;Réf. INC-2026-115 · Services : Connect Voice (Téléphonie) · Zone : Tous les clients&lt;/p&gt;</description></item>
-<item><title>[Test] [Perturbation] Appels sortants et entrants impossibles — Analyse en cours</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-115</link><guid isPermaLink="false">INC-2026-115/2026-11-07T15:00/investigating</guid><pubDate>Sat, 07 Nov 2026 15:00:00 +0100</pubDate><description>&lt;p&gt;Une partie des appels échouent. Nos équipes analysent la situation.&lt;/p&gt;&lt;p&gt;Réf. INC-2026-115 · Services : Connect Voice (Téléphonie) · Zone : Tous les clients&lt;/p&gt;</description></item>
+<item><title>[Test] [Panne] Panne fibre — Analyse en cours</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-116</link><guid isPermaLink="false">INC-2026-116/2026-11-19T12:03/investigating</guid><pubDate>Thu, 19 Nov 2026 12:03:00 +0100</pubDate><description>Suite à une coupure fibre, les services Internet et Connect DC sont impactés
+
+Réf. INC-2026-116 · Services : Connect Internet, Connect DC · Zone : Marin</description></item>
+<item><title>[Test] [Perturbation] Appels sortants et entrants impossibles — Résolu</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-115</link><guid isPermaLink="false">INC-2026-115/2026-11-18T10:00/resolved</guid><pubDate>Wed, 18 Nov 2026 10:00:00 +0100</pubDate><description>Les appels sortants fonctionnent à nouveau normalement. L'incident est clos.
+
+Réf. INC-2026-115 · Services : Connect Voice (Téléphonie) · Zone : Tous les clients</description></item>
+<item><title>[Test] [Perturbation] Appels sortants et entrants impossibles — Analyse en cours</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-115</link><guid isPermaLink="false">INC-2026-115/2026-11-07T15:00/investigating</guid><pubDate>Sat, 07 Nov 2026 15:00:00 +0100</pubDate><description>Une partie des appels échouent. Nos équipes analysent la situation.
+
+Réf. INC-2026-115 · Services : Connect Voice (Téléphonie) · Zone : Tous les clients</description></item>
 </channel></rss>

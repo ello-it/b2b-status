@@ -198,7 +198,8 @@
         pill(st.cls, resolved ? 'Résolu' : 'En cours · ' + st.label) + '</div>' +
         '<h1>' + esc(inc.title) + '</h1>' +
         '<p class="muted small">Réf. <b>' + esc(inc.id) + '</b>' +
-          (lastD ? ' · Dernière mise à jour : ' + fmtDate(lastD) + ' à ' + fmtTime(lastD) : '') + '</p></div>' +
+          (lastD ? ' · Dernière mise à jour : ' + fmtDate(lastD) + ' à ' + fmtTime(lastD) : '') + '</p>' +
+        (inc.summary ? '<p class="summary">' + nl2br(inc.summary) + '</p>' : '') + '</div>' +
       '<ol class="steps" aria-label="Avancement de l\'incident">' + STAGES.map(function (s, i) {
         var cls = (i <= idx ? 'done' : '') + (i === idx ? ' current' : '');
         return '<li class="' + cls + '"' + (i === idx ? ' aria-current="step"' : '') + '>' + esc(s.label) + '</li>';

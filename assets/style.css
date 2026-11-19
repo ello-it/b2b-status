@@ -133,6 +133,7 @@ h2 { font-size: 17px; margin: 36px 0 12px; }
 /* ── Page incident ──────────────────────────────────────────────────── */
 .back { display: inline-block; margin-bottom: 16px; font-size: 14px; text-decoration: none; }
 .incident-head .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.incident-head .summary { margin: 14px 0 0; font-size: 16px; }
 
 .steps { display: flex; margin: 24px 0; padding: 0; counter-reset: step; }
 .steps li {

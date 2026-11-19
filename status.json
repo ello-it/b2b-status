@@ -1,7 +1,7 @@
 {
  "test_mode": true,
  "message": "",
- "updated": "2026-11-19T15:51",
+ "updated": "2026-11-19T16:22",
  "seq": {
   "INC-2026": 117,
   "MNT-2026": 1
@@ -75,12 +75,15 @@
    "title": "Panne Fibre",
    "severity": "outage",
    "stage": "identified",
-   "services": [],
-   "zone": "eli10",
+   "services": [
+    "fibre",
+    "svc-mwncmwp3"
+   ],
+   "zone": "Neuchâtel",
    "started": "2026-11-19T12:09",
-   "eta": "",
+   "eta": "18h00",
    "resolved": "",
-   "summary": "SAlut",
+   "summary": "Certains client dans la région de Neuchâtel subissent actuellement une interruption de service basé sur fibre optique.",
    "updates": [
     {
      "at": "2026-11-19T15:40",

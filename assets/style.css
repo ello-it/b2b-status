@@ -76,6 +76,8 @@ h2 { font-size: 17px; margin: 36px 0 12px; }
 .overall.ok     { color: var(--ok);     background: var(--ok-bg);     border-color: var(--ok); }
 .overall.warn   { color: var(--warn);   background: var(--warn-bg);   border-color: var(--warn); }
 .overall.danger { color: var(--danger); background: var(--danger-bg); border-color: var(--danger); }
+.overall.info    { color: var(--info);    background: var(--info-bg);    border-color: var(--info); }
+.overall.neutral { color: var(--neutral); background: var(--neutral-bg); border-color: var(--border); }
 
 /* ── Pastilles ──────────────────────────────────────────────────────── */
 .pill {
@@ -94,6 +96,7 @@ h2 { font-size: 17px; margin: 36px 0 12px; }
   padding: 16px 18px; margin-bottom: 12px;
 }
 .card.accent-danger { border-left: 4px solid var(--danger); }
+.card.accent-warn   { border-left: 4px solid var(--warn); }
 .card.accent-info   { border-left: 4px solid var(--info); }
 .card .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 .card h3 { font-size: 16px; margin: 0 0 6px; }
@@ -181,7 +184,8 @@ h2 { font-size: 17px; margin: 36px 0 12px; }
   .history li { flex-direction: column; gap: 2px; }
 }
 
-/* ── Bandeau « page de test » (à retirer à la mise en service) ───────── */
+/* ── Bandeau « page de test » (affiché si test_mode = true dans status.json) ── */
+.test-banner[hidden] { display: none; }
 .test-banner {
   background: #D6002A; color: #fff; text-align: center;
   padding: 10px 16px; font-size: 14px;

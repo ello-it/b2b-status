@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incident — Statut ello business</title>
+  <meta name="description" content="Suivi d'un incident sur les services ello business.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<!-- Page unique pour tous les incidents : incident.html?id=INC-AAAA-NNN, contenu lu dans status.json -->
+<body data-page="incident">
+
+<div class="test-banner" id="test-banner" role="alert" hidden>
+  <strong>Page de test</strong> — les incidents et maintenances affichés ici sont fictifs.
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="assets/logo-ello-business.png" alt="ello business" width="142" height="40"><span>Statut des services</span></a>
+    <nav><a href="https://ello-business.ch">ello-business.ch &#8599;</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back" href="./">&larr; Tous les incidents</a>
+  <div id="incident"><p class="muted">Chargement…</p></div>
+  <noscript><p>Activez JavaScript pour afficher le détail de l'incident, ou contactez le support au 032 729 98 98.</p></noscript>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Besoin d'aide ? <a href="tel:+41327299898">032 729 98 98</a> · <a href="mailto:business@ello.ch">business@ello.ch</a></span>
+    <span id="updated"></span>
+  </div>
+</footer>
+
+<script src="assets/status.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+ "test_mode": true,
+ "message": "",
+ "updated": "2026-11-19T14:12",
+ "services": [
+  {"id": "fibre", "name": "Internet fibre", "status": "degraded"},
+  {"id": "sip", "name": "Téléphonie IP (SIP trunk)", "status": "degraded"},
+  {"id": "interco", "name": "Interconnexion de sites", "status": "ok"},
+  {"id": "datacenter", "name": "Hébergement / datacenter", "status": "ok"}
+ ],
+ "incidents": [
+  {
+   "id": "INC-2026-118",
+   "title": "Interruption des accès fibre et de la téléphonie IP à Peseux",
+   "severity": "outage",
+   "stage": "identified",
+   "services": ["fibre", "sip"],
+   "zone": "Peseux (secteur Grand-Rue)",
+   "started": "2026-11-19T13:25",
+   "eta": "vers 18:00",
+   "resolved": "",
+   "summary": "Un câble fibre a été endommagé lors de travaux de génie civil. Notre équipe est sur place ; rétablissement estimé vers 18:00.",
+   "updates": [
+    {"at": "2026-11-19T14:10", "stage": "identified", "text": "Notre équipe est sur place. Les soudures du câble endommagé sont en cours. Nous estimons un rétablissement vers 18:00."},
+    {"at": "2026-11-19T13:50", "stage": "identified", "text": "Un câble fibre a été sectionné lors de travaux de génie civil sur la Grand-Rue. Une équipe d'intervention a été envoyée."},
+    {"at": "2026-11-19T13:25", "stage": "investigating", "text": "Nous constatons une interruption des accès fibre et de la téléphonie IP pour une partie de nos clients à Peseux. Nos équipes analysent la situation."}
+   ]
+  },
+  {
+   "id": "INC-2026-115",
+   "title": "Échecs d'appels sortants sur la téléphonie IP",
+   "severity": "degraded",
+   "stage": "resolved",
+   "services": ["sip"],
+   "zone": "Tous les clients",
+   "started": "2026-11-13T09:05",
+   "eta": "",
+   "resolved": "2026-11-13T10:45",
+   "summary": "Une partie des appels sortants échouait suite à un incident chez un opérateur partenaire.",
+   "updates": [
+    {"at": "2026-11-13T10:45", "stage": "resolved", "text": "Les appels sortants fonctionnent à nouveau normalement. L'incident est clos."},
+    {"at": "2026-11-13T09:05", "stage": "investigating", "text": "Une partie des appels sortants échoue. Nos équipes analysent la situation."}
+   ]
+  },
+  {
+   "id": "INC-2026-112",
+   "title": "Interruption d'une interconnexion de sites à Marin-Epagnier",
+   "severity": "outage",
+   "stage": "resolved",
+   "services": ["interco"],
+   "zone": "Marin-Epagnier",
+   "started": "2026-11-09T07:40",
+   "eta": "",
+   "resolved": "2026-11-09T10:45",
+   "summary": "Un équipement d'accès défectueux a été remplacé.",
+   "updates": [
+    {"at": "2026-11-09T10:45", "stage": "resolved", "text": "L'équipement défectueux a été remplacé, l'interconnexion est rétablie."},
+    {"at": "2026-11-09T07:40", "stage": "investigating", "text": "Une interconnexion de sites est interrompue à Marin-Epagnier. Un technicien est en route."}
+   ]
+  }
+ ],
+ "maintenances": [
+  {
+   "id": "MNT-2026-041",
+   "title": "Maintenance du cœur de réseau — Neuchâtel",
+   "start": "2026-11-26T00:00",
+   "end": "2026-11-26T04:00",
+   "services": ["fibre", "interco"],
+   "zone": "Ville de Neuchâtel",
+   "text": "Une ou deux coupures de 15 minutes au maximum sont possibles pendant cette fenêtre. Les accès avec lien de secours basculent automatiquement."
+  },
+  {
+   "id": "MNT-2026-042",
+   "title": "Mise à jour des plateformes de téléphonie IP",
+   "start": "2026-12-02T22:00",
+   "end": "2026-12-02T23:00",
+   "services": ["sip"],
+   "zone": "Tous les clients",
+   "text": "Les appels en cours peuvent être interrompus. Les centraux téléphoniques se réenregistrent automatiquement en quelques minutes ; aucune action n'est requise de votre part."
+  }
+ ]
+}

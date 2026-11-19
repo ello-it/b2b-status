@@ -1,7 +1,7 @@
 {
  "test_mode": true,
  "message": "",
- "updated": "2026-11-19T10:20",
+ "updated": "2026-11-19T10:22",
  "services": [
   {
    "id": "fibre",
@@ -25,38 +25,6 @@
   }
  ],
  "incidents": [
-  {
-   "id": "INC-2026-118",
-   "title": "Interruption des accès fibre et de la téléphonie IP à Peseux",
-   "severity": "outage",
-   "stage": "identified",
-   "services": [
-    "fibre",
-    "sip"
-   ],
-   "zone": "Peseux (secteur Grand-Rue)",
-   "started": "2026-11-19T13:25",
-   "eta": "vers 18:00",
-   "resolved": "",
-   "summary": "Un câble fibre a été endommagé lors de travaux de génie civil. Notre équipe est sur place ; rétablissement estimé vers 18:00.",
-   "updates": [
-    {
-     "at": "2026-11-19T14:10",
-     "stage": "identified",
-     "text": "Notre équipe est sur place. Les soudures du câble endommagé sont en cours. Nous estimons un rétablissement vers 18:00."
-    },
-    {
-     "at": "2026-11-19T13:50",
-     "stage": "identified",
-     "text": "Un câble fibre a été sectionné lors de travaux de génie civil sur la Grand-Rue. Une équipe d'intervention a été envoyée."
-    },
-    {
-     "at": "2026-11-19T13:25",
-     "stage": "investigating",
-     "text": "Nous constatons une interruption des accès fibre et de la téléphonie IP pour une partie de nos clients à Peseux. Nos équipes analysent la situation."
-    }
-   ]
-  },
   {
    "id": "INC-2026-115",
    "title": "Appels sortants et entrants impossibles",

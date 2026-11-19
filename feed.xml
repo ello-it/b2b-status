@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+<title>Statut des services — ello business</title>
+<link>https://status.ello-business.ch/</link>
+<atom:link href="https://status.ello-business.ch/feed.xml" rel="self" type="application/rss+xml"/>
+<description>Incidents en cours et maintenances planifiées des services ello business.</description>
+<language>fr-ch</language>
+<lastBuildDate>Thu, 19 Nov 2026 10:30:00 +0100</lastBuildDate>
+<ttl>5</ttl>
+<item><title>[Perturbation] Appels sortants et entrants impossibles — Résolu</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-115</link><guid isPermaLink="false">INC-2026-115/2026-11-18T10:00/resolved</guid><pubDate>Wed, 18 Nov 2026 10:00:00 +0100</pubDate><description>&lt;p&gt;Les appels sortants fonctionnent à nouveau normalement. L'incident est clos.&lt;/p&gt;&lt;p&gt;Réf. INC-2026-115 · Services : Connect Voice (Téléphonie) · Zone : Tous les clients&lt;/p&gt;</description></item>
+<item><title>[Perturbation] Appels sortants et entrants impossibles — Analyse en cours</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-115</link><guid isPermaLink="false">INC-2026-115/2026-11-07T15:00/investigating</guid><pubDate>Sat, 07 Nov 2026 15:00:00 +0100</pubDate><description>&lt;p&gt;Une partie des appels échouent. Nos équipes analysent la situation.&lt;/p&gt;&lt;p&gt;Réf. INC-2026-115 · Services : Connect Voice (Téléphonie) · Zone : Tous les clients&lt;/p&gt;</description></item>
+</channel></rss>

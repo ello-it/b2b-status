@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S'abonner — Statut ello business</title>
+  <meta name="description" content="Recevoir les incidents et maintenances ello business dans Teams, Outlook ou un lecteur RSS.">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Statut des services — ello business" href="feed.xml">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="assets/logo-ello-business.png" alt="ello business" width="142" height="40"><span>Statut des services</span></a>
+    <nav><a href="https://ello-business.ch">ello-business.ch &#8599;</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back" href="./">&larr; Statut des services</a>
+  <h1>Recevoir les mises à jour</h1>
+  <p class="muted">Chaque nouvel incident, chaque étape de son traitement et chaque maintenance planifiée sont publiés dans un flux RSS. Ajoutez-le une fois à votre outil habituel : les nouveautés y arriveront automatiquement.</p>
+
+  <h2>Adresse du flux</h2>
+  <div class="feed-url">
+    <code id="feed-url">https://status.ello-business.ch/feed.xml</code>
+    <button type="button" id="copy-btn">Copier</button>
+  </div>
+
+  <h2>Dans un canal Microsoft Teams</h2>
+  <ol class="howto">
+    <li>Dans le canal souhaité, ouvrez le menu <b>⋯</b> puis <b>Workflows</b>.</li>
+    <li>Choisissez le modèle qui publie dans le canal les nouveaux éléments d'un <b>flux RSS</b>.</li>
+    <li>Collez l'adresse du flux ci-dessus et validez.</li>
+  </ol>
+
+  <h2>Dans Outlook</h2>
+  <ol class="howto">
+    <li>Dans Outlook classique pour Windows, faites un clic droit sur le dossier <b>Flux RSS</b>.</li>
+    <li>Choisissez <b>Ajouter un nouveau flux RSS…</b>, collez l'adresse du flux et validez.</li>
+  </ol>
+  <p class="muted small">Le nouvel Outlook et Outlook sur le web ne lisent pas les flux RSS : utilisez dans ce cas Teams ou un lecteur RSS.</p>
+
+  <h2>Dans un lecteur RSS</h2>
+  <p>Feedly, Inoreader, Thunderbird, NetNewsWire… : ajoutez un abonnement et collez l'adresse du flux.</p>
+
+  <div class="advice">
+    <strong>Bon à savoir</strong>
+    <ul>
+      <li>La plupart des outils vérifient le flux toutes les 15 à 60 minutes : pour suivre un incident en direct, gardez cette page ouverte, elle s'actualise chaque minute.</li>
+      <li>Aucune inscription ni adresse e-mail n'est demandée ; pour vous désabonner, supprimez simplement le flux de votre outil.</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Besoin d'aide ? <a href="tel:+41327299898">032 729 98 98</a> · <a href="mailto:business@ello.ch">business@ello.ch</a></span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy-btn');
+    var url = document.getElementById('feed-url').textContent;
+    btn.addEventListener('click', function () {
+      if (!navigator.clipboard) { btn.textContent = 'Sélectionnez et copiez'; return; }
+      navigator.clipboard.writeText(url).then(function () {
+        btn.textContent = 'Copié ✓';
+        setTimeout(function () { btn.textContent = 'Copier'; }, 2000);
+      });
+    });
+  })();
+</script>
+</body>
+</html>

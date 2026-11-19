@@ -144,7 +144,7 @@
 
     $('maintenances').innerHTML = maint.length ? maint.map(function (m) {
       var running = isRunning(m, now);
-      return '<article class="card accent-info">' +
+      return '<article class="card accent-info" id="' + esc(m.id) + '">' +
         '<div class="pills">' + pill('info', 'Maintenance') +
           (running ? pill('warn', 'En cours') : pill('neutral', 'Planifiée')) + '</div>' +
         '<h3>' + esc(m.title) + '</h3>' +

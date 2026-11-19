@@ -6,6 +6,7 @@
   <title>Incident — Statut ello business</title>
   <meta name="description" content="Suivi d'un incident sur les services ello business.">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Statut des services — ello business" href="feed.xml">
 </head>
 <!-- Page unique pour tous les incidents : incident.html?id=INC-AAAA-NNN, contenu lu dans status.json -->
 <body data-page="incident">
@@ -17,7 +18,10 @@
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="./"><img src="assets/logo-ello-business.png" alt="ello business" width="142" height="40"><span>Statut des services</span></a>
-    <nav><a href="https://ello-business.ch">ello-business.ch &#8599;</a></nav>
+    <nav>
+      <a class="rss" href="abonnement.html" title="Recevoir les incidents et maintenances dans Outlook, Teams ou un lecteur RSS"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="5" cy="19" r="2" fill="currentColor"/><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>S'abonner</a>
+      <a href="https://ello-business.ch">ello-business.ch &#8599;</a>
+    </nav>
   </div>
 </header>
 

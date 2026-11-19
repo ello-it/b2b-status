@@ -1,7 +1,7 @@
 {
- "test_mode": false,
+ "test_mode": true,
  "message": "",
- "updated": "2026-11-19T10:30",
+ "updated": "2026-11-19T10:59",
  "services": [
   {
    "id": "fibre",
@@ -63,6 +63,27 @@
      "at": "2026-11-07T15:00",
      "stage": "investigating",
      "text": "Une partie des appels échouent. Nos équipes analysent la situation."
+    }
+   ]
+  },
+  {
+   "id": "INC-2026-116",
+   "title": "Test",
+   "severity": "outage",
+   "stage": "investigating",
+   "services": [
+    "fibre"
+   ],
+   "zone": "",
+   "started": "2026-11-19T10:59",
+   "eta": "",
+   "resolved": "",
+   "summary": "Panne affecte actuellement une partie de nos clients pour leurs connexions Internet",
+   "updates": [
+    {
+     "at": "2026-11-19T10:59",
+     "stage": "investigating",
+     "text": "Panne affecte actuellement une partie de nos clients pour leurs connexions Internet"
     }
    ]
   }

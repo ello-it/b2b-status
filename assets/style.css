@@ -17,8 +17,9 @@
   --info: #0032FF;    --info-bg: #E5EBFF;
   --neutral: #5f6475; --neutral-bg: #eceef4;
 }
+/* .light sur <html> force le thème clair (widget intégré dans un portail clair). */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
     --bg: #0e1018;
     --surface: #181b26;
     --border: #2c3142;
@@ -211,3 +212,22 @@ h2 { font-size: 17px; margin: 36px 0 12px; }
 /* ── Périmètre de la page (business, pas résidentiel) ───────────────── */
 .scope { margin: 0 0 16px; font-size: 14px; color: var(--muted); }
 .scope strong { color: var(--text); }
+
+/* ── Widget à intégrer (widget.html, iframe dans un portail client) ─── */
+body.widget { background: transparent; font-size: 14px; }
+.widget .test-banner { padding: 4px 10px; font-size: 12px; }
+.widget main { padding: 8px; }
+.widget .overall { padding: 12px 14px; gap: 10px; }
+.widget .overall strong { font-size: 15px; }
+.widget .overall p { font-size: 13px; }
+.w-inc {
+  display: flex; flex-direction: column; gap: 4px; margin-top: 8px; padding: 10px 12px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text); text-decoration: none;
+}
+.w-inc:hover { border-color: var(--brand); }
+.w-inc.accent-danger { border-left: 4px solid var(--danger); }
+.w-inc.accent-warn   { border-left: 4px solid var(--warn); }
+.w-inc .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.w-meta { font-size: 12px; color: var(--muted); }
+.w-more { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; text-decoration: none; }

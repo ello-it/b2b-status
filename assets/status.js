@@ -99,13 +99,12 @@
 
   function renderChrome(data) {
     $('test-banner').hidden = !data.test_mode;
-    var u = parse(data.updated);
-    $('updated').textContent = u ? 'Page mise à jour le ' + fmtDate(u) + ' à ' + fmtTime(u) : '';
+    var u = parse(data.updated), el = $('updated');
+    if (el) el.textContent = u ? 'Page mise à jour le ' + fmtDate(u) + ' à ' + fmtTime(u) : '';
   }
 
-  // ── Page d'accueil ─────────────────────────────────────────────────────
-  function renderIndex(data) {
-    var now = new Date();
+  // ── Bandeau d'état global (accueil + widget) ───────────────────────────
+  function renderOverall(data, now) {
     var active = activeIncidents(data);
     var maint  = upcomingMaintenances(data, now);
     var svc    = data.services || [];
@@ -128,6 +127,32 @@
     ov.className = 'overall ' + level;
     ov.innerHTML = '<span class="dot" aria-hidden="true"></span><div><strong>' + esc(OVERALL[level]) +
       '</strong><p>' + esc(text) + '</p></div>';
+  }
+
+  // ── Widget à intégrer (iframe dans un portail client) ──────────────────
+  // Bandeau d'état + incidents en cours seulement ; les liens s'ouvrent dans un
+  // nouvel onglet (<base target="_blank"> dans widget.html).
+  function renderWidget(data) {
+    var now = new Date();
+    renderOverall(data, now);
+    var active = activeIncidents(data);
+    $('incidents').innerHTML = active.map(function (inc) {
+      var sev = severityOf(inc), st = STAGES[stageOf(inc.stage)];
+      return '<a class="w-inc accent-' + sev.cls + '" href="incident.html?id=' + encodeURIComponent(inc.id) + '">' +
+        '<span class="pills">' + pill(sev.cls, sev.label) + pill(st.cls, st.label) + '</span>' +
+        '<b>' + esc(inc.title) + '</b>' +
+        '<span class="w-meta">' + esc([inc.zone, 'depuis le ' + fmt(inc.started)].filter(Boolean).join(' · ')) + '</span>' +
+        '</a>';
+    }).join('');
+  }
+
+  // ── Page d'accueil ─────────────────────────────────────────────────────
+  function renderIndex(data) {
+    var now = new Date();
+    var active = activeIncidents(data);
+    var maint  = upcomingMaintenances(data, now);
+    var svc    = data.services || [];
+    renderOverall(data, now);
 
     $('incidents').innerHTML = active.length ? active.map(function (inc) {
       var sev = severityOf(inc), st = STAGES[stageOf(inc.stage)];
@@ -229,7 +254,9 @@
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (data) {
         renderChrome(data);
-        if (page === 'incident') renderIncident(data); else renderIndex(data);
+        if (page === 'incident') renderIncident(data);
+        else if (page === 'widget') renderWidget(data);
+        else renderIndex(data);
         loaded = true;
       })
       .catch(function () {

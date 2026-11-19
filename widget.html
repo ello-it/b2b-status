@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr" class="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>État des services — ello business</title>
+  <meta name="robots" content="noindex">
+  <!-- Tous les liens s'ouvrent hors de l'iframe -->
+  <base target="_blank">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Thème clair par défaut (portail clair) ; ?theme=auto suit le réglage du système.
+    if (/[?&]theme=auto\b/.test(location.search)) document.documentElement.classList.remove('light');
+  </script>
+</head>
+<!-- Version compacte à intégrer en iframe (portail client Hubshare, etc.) :
+     bandeau d'état + incidents en cours, même status.json que la page complète. -->
+<body data-page="widget" class="widget">
+
+<div class="test-banner" id="test-banner" role="alert" hidden>
+  <strong>Page de test</strong> — informations fictives.
+</div>
+
+<main>
+  <div class="overall neutral" id="overall" role="status">
+    <span class="dot" aria-hidden="true"></span>
+    <div><strong>Chargement…</strong><p>Récupération de l'état des services.</p></div>
+  </div>
+  <div id="incidents"></div>
+  <a class="w-more" href="./">Voir la page de statut complète &#8599;</a>
+</main>
+
+<script src="assets/status.js"></script>
+</body>
+</html>

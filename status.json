@@ -1,7 +1,7 @@
 {
  "test_mode": true,
  "message": "",
- "updated": "2026-11-19T11:07",
+ "updated": "2026-11-19T11:30",
  "services": [
   {
    "id": "fibre",
@@ -70,16 +70,21 @@
    "id": "INC-2026-116",
    "title": "Test",
    "severity": "outage",
-   "stage": "identified",
+   "stage": "resolved",
    "services": [
     "fibre"
    ],
    "zone": "",
    "started": "2026-11-19T10:59",
    "eta": "",
-   "resolved": "",
+   "resolved": "2026-11-19T11:30",
    "summary": "Panne affecte actuellement une partie de nos clients pour leurs connexions Internet",
    "updates": [
+    {
+     "at": "2026-11-19T11:30",
+     "stage": "resolved",
+     "text": "Panne résolue"
+    },
     {
      "at": "2026-11-19T11:07",
      "stage": "identified",

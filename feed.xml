@@ -3,10 +3,11 @@
 <title>[Test] Statut des services — ello business</title>
 <link>https://status.ello-business.ch/</link>
 <atom:link href="https://status.ello-business.ch/feed.xml" rel="self" type="application/rss+xml"/>
-<description>Incidents en cours et maintenances planifiées des services ello business.</description>
+<description>Incidents sur les services ello business : début, avancement et résolution.</description>
 <language>fr-ch</language>
-<lastBuildDate>Thu, 19 Nov 2026 11:07:00 +0100</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 11:30:00 +0100</lastBuildDate>
 <ttl>5</ttl>
+<item><title>[Test] [Panne] Test — Résolu</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-116</link><guid isPermaLink="false">INC-2026-116/2026-11-19T11:30/resolved</guid><pubDate>Thu, 19 Nov 2026 11:30:00 +0100</pubDate><description>&lt;p&gt;Panne résolue&lt;/p&gt;&lt;p&gt;Réf. INC-2026-116 · Services : Connect Internet&lt;/p&gt;</description></item>
 <item><title>[Test] [Panne] Test — Cause identifiée</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-116</link><guid isPermaLink="false">INC-2026-116/2026-11-19T11:07/identified</guid><pubDate>Thu, 19 Nov 2026 11:07:00 +0100</pubDate><description>&lt;p&gt;Nous avons trouvé la cause et travaillons à sa résolution&lt;/p&gt;&lt;p&gt;Réf. INC-2026-116 · Services : Connect Internet&lt;/p&gt;</description></item>
 <item><title>[Test] [Panne] Test — Analyse en cours</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-116</link><guid isPermaLink="false">INC-2026-116/2026-11-19T10:59/investigating</guid><pubDate>Thu, 19 Nov 2026 10:59:00 +0100</pubDate><description>&lt;p&gt;Panne affecte actuellement une partie de nos clients pour leurs connexions Internet&lt;/p&gt;&lt;p&gt;Réf. INC-2026-116 · Services : Connect Internet&lt;/p&gt;</description></item>
 <item><title>[Test] [Perturbation] Appels sortants et entrants impossibles — Résolu</title><link>https://status.ello-business.ch/incident.html?id=INC-2026-115</link><guid isPermaLink="false">INC-2026-115/2026-11-18T10:00/resolved</guid><pubDate>Wed, 18 Nov 2026 10:00:00 +0100</pubDate><description>&lt;p&gt;Les appels sortants fonctionnent à nouveau normalement. L'incident est clos.&lt;/p&gt;&lt;p&gt;Réf. INC-2026-115 · Services : Connect Voice (Téléphonie) · Zone : Tous les clients&lt;/p&gt;</description></item>

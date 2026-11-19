@@ -1,9 +1,9 @@
 {
  "test_mode": true,
  "message": "",
- "updated": "2026-11-19T12:03",
+ "updated": "2026-11-19T12:10",
  "seq": {
-  "INC-2026": 116
+  "INC-2026": 117
  },
  "services": [
   {
@@ -70,24 +70,21 @@
    ]
   },
   {
-   "id": "INC-2026-116",
-   "title": "Panne fibre",
+   "id": "INC-2026-117",
+   "title": "Panne Fibre",
    "severity": "outage",
    "stage": "investigating",
-   "services": [
-    "fibre",
-    "svc-mwncmwp3"
-   ],
-   "zone": "Marin",
-   "started": "2026-11-19T12:02",
+   "services": [],
+   "zone": "eli10",
+   "started": "2026-11-19T12:09",
    "eta": "",
    "resolved": "",
-   "summary": "Suite à une coupure fibre, les services Internet et Connect DC sont impactés",
+   "summary": "SAlut",
    "updates": [
     {
-     "at": "2026-11-19T12:03",
+     "at": "2026-11-19T12:10",
      "stage": "investigating",
-     "text": "Suite à une coupure fibre, les services Internet et Connect DC sont impactés"
+     "text": "SAlut"
     }
    ]
   }

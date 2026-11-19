@@ -55,12 +55,12 @@
    "summary": "Les appels entrants et sortant n'était plus possible pour certains de nos client, suite à une panne chez Sunrise.",
    "updates": [
     {
-     "at": "2026-11-13T10:45",
+     "at": "2026-11-18T10:00",
      "stage": "resolved",
      "text": "Les appels sortants fonctionnent à nouveau normalement. L'incident est clos."
     },
     {
-     "at": "2026-11-13T09:05",
+     "at": "2026-11-07T15:00",
      "stage": "investigating",
      "text": "Une partie des appels échouent. Nos équipes analysent la situation."
     }

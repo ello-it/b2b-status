@@ -1,26 +1,41 @@
 {
- "test_mode": true,
+ "test_mode": false,
  "message": "",
- "updated": "2026-11-19T10:22",
+ "updated": "2026-11-19T10:30",
  "services": [
   {
    "id": "fibre",
-   "name": "Internet fibre",
+   "name": "Connect Internet",
    "status": "ok"
   },
   {
    "id": "sip",
-   "name": "Téléphonie IP",
+   "name": "Connect Voice (Téléphonie)",
+   "status": "ok"
+  },
+  {
+   "id": "svc-mwncluw9",
+   "name": "Protect",
    "status": "ok"
   },
   {
    "id": "interco",
-   "name": "Interconnexion de sites",
+   "name": "Connect Inter-DC",
+   "status": "ok"
+  },
+  {
+   "id": "svc-mwncmwp3",
+   "name": "Connect DC",
    "status": "ok"
   },
   {
    "id": "datacenter",
    "name": "Hébergement / datacenter",
+   "status": "ok"
+  },
+  {
+   "id": "svc-mwnckayf",
+   "name": "FreeWiFi.ne",
    "status": "ok"
   }
  ],
